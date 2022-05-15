@@ -20,16 +20,16 @@ const Skills = () => {
 
     const slideLeft = () => {
         var slider = document.getElementById('slider');
-        slider.scrollLeft = slider.scrollLeft - 500;
+        slider.scrollLeft = slider.scrollLeft - 800;
       };
     
       const slideRight = () => {
         var slider = document.getElementById('slider');
-        slider.scrollLeft = slider.scrollLeft + 500;
+        slider.scrollLeft = slider.scrollLeft + 800;
       };
 
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className='w-full h-max bg-[#0a192f] text-gray-300'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
           <div>
@@ -88,7 +88,7 @@ const Skills = () => {
               </div>
           </div>
 
-        <div className='relative flex items-center w-full h-screen bg-[#0a192f] text-gray-300'>
+        <div className='relative flex items-center '>
             <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
             <div id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
                 {data.map((item) => (
